@@ -4,9 +4,14 @@
 
 Документация по [Jupyter Docker Stacks on ReadTheDocs](http://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 
-Docker image: `docker pull jtprog/jupyter:latest`
+Get docker image:
 
-docker-compose:
+```bash
+docker pull jtprog/jupyter:latest
+```
+
+Simple `docker-compose.yml`:
+
 ```yaml
 version: "3"
 
@@ -19,3 +24,4 @@ services:
       - ./data:/home/jtprogru/work:rw
     restart: always
 ```
+
